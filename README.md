@@ -11,6 +11,7 @@ Approach:
          ResNet50 gave accuarcies in range of 75% to 85% for the output classifications.
 4. Best accuracies : 
          RESNET50 :   (ResNet50-Final model in the Assignment5 repository. logs provided at the bottom)
+         
          val_gender_output_acc:        0.7021
          val_image_quality_output_acc: 0.7054 
          val_age_output_acc:           0.8000 
