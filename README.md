@@ -2,14 +2,14 @@
 Qualifier assignment phase1
 
 Multi Label classification problem:
-   Approach:
-   1. Tried with various models without any weights - VGG16 , RESNET50 , Simple CNN models etc.
-   2. Tried to write and implement a RESNET50 from scratch , but it was a failed attempt. I will continue to try build ResNET50 etc from scratch.
-   3. Of the models I executed : 
+Approach:
+1. Tried with various models without any weights - VGG16 , RESNET50 , Simple CNN models etc.
+2. Tried to write and implement a RESNET50 from scratch , but it was a failed attempt. I will continue to try build ResNET50 etc from scratch.
+3. Of the models I executed : 
          VGG16 gave an average accuracy of 70% for all the outputs 
          Simple CNN model gave a better accuracy of around 80% for all the outputs 
          ResNet50 gave accuarcies in range of 75% to 85% for the output classifications.
-   4. Best accuracies : 
+4. Best accuracies : 
          RESNET50 :   (ResNet50-Final model in the Assignment5 repository. logs provided at the bottom)
          val_gender_output_acc:        0.7021
          val_image_quality_output_acc: 0.7054 
@@ -40,18 +40,18 @@ Multi Label classification problem:
          val_pose_output_acc: 0.7665 
          val_emotion_output_acc: 0.8604
          
-    5.   Implemented cutout with lengths 1 each. Above and below it are not boosting the accuracy 
-    6.   Image augmentation : 
+5.   Implemented cutout with lengths 1 each. Above and below it are not boosting the accuracy 
+6.   Image augmentation : 
             - Rescaled the images 
             - Used featurwise center and normalization 
             - Horizontal flip - Is boosting the accuracy a little 
             - Height and Width Shifts are not supporting as accuracy boosters in this case 
-     7. Optimizer 
+ 7. Optimizer 
             - Thought Sigmoid would be better , but its not boosting accuracy - So used SGD and adam.
-     8. Loss - Binary_cross entropy gave better results 
-     9. Defined a scheduler and used gave variable learning rate 
-     10 . Did not freeze the weights. 
-     11. Ran 100 to 150 logs for each model.
+ 8. Loss - Binary_cross entropy gave better results 
+ 9. Defined a scheduler and used gave variable learning rate 
+ 10 . Did not freeze the weights. 
+ 11. Ran 100 to 150 logs for each model.
      
   ResNET 50 logs :
   Epoch 1/100
